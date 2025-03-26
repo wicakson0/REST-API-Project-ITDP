@@ -1,0 +1,814 @@
+{
+	"info": {
+		"_postman_id": "9868f1af-f993-4c7f-aa64-e2b7c8947709",
+		"name": "Fin Proj Task 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43152367"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Caleb Effendi",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ceffendi@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-maybank-v1/users/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-maybank-v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Caleb Effendi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ceffendi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/users/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 07:46:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 201,\n    \"message\": \"User berhasil dibuat\",\n    \"data\": {\n        \"name\": \"Caleb Effendi\",\n        \"email\": \"ceffendi@gmail.com\",\n        \"updated_at\": \"2025-03-26T07:46:27.000000Z\",\n        \"created_at\": \"2025-03-26T07:46:27.000000Z\",\n        \"id\": 1\n    },\n    \"token\": \"1|xX4OdN5UtKZI9xINPSYz7oRQU6PqCy7ZGvQd3SDaf8d4a5ac\",\n    \"type\": \"Bearer\"\n}"
+				},
+				{
+					"name": "422 Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Caleb Kurang Ganteng",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jackeffendi@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/users/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 08:21:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The email field is required.\",\n    \"errors\": {\n        \"email\": [\n            \"The email field is required.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ceffendi@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-maybank-v1/users/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-maybank-v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ceffendi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 07:48:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User berhasil login\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Caleb Effendi\",\n        \"email\": \"ceffendi@gmail.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2025-03-26T07:46:27.000000Z\",\n        \"updated_at\": \"2025-03-26T07:46:27.000000Z\"\n    },\n    \"token\": \"3|WipPIUQqyMqVINPo8d73kevMm7rTYC0bEoXwllM950033da2\",\n    \"type\": \"Bearer\"\n}"
+				},
+				{
+					"name": "422 Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 08:22:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The email field is required.\",\n    \"errors\": {\n        \"email\": [\n            \"The email field is required.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|WipPIUQqyMqVINPo8d73kevMm7rTYC0bEoXwllM950033da2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-maybank-v1/users/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-maybank-v1",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Informasi Saldo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "599 Informasi Saldo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2025-03-27",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "MayBank2025",
+								"type": "text"
+							},
+							{
+								"key": "ORIGIN",
+								"value": "www.maybank.com",
+								"type": "text"
+							},
+							{
+								"key": "X-PARTNER-ID",
+								"value": "123456",
+								"type": "text"
+							},
+							{
+								"key": "X-EXTERNAL-ID",
+								"value": "78910",
+								"type": "text"
+							},
+							{
+								"key": "CHANNEL-ID",
+								"value": "95221",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/informasi-saldo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"informasi-saldo"
+							]
+						}
+					},
+					"status": "unknown status",
+					"code": 599,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 08:12:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 599,\n    \"message\": \"You cannot access this information\"\n}"
+				},
+				{
+					"name": "401 Informasi Saldo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2025-03-27",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "MayBank2025",
+								"type": "text"
+							},
+							{
+								"key": "ORIGIN",
+								"value": "www.maybank.com",
+								"type": "text"
+							},
+							{
+								"key": "X-PARTNER-ID",
+								"value": "123456",
+								"type": "text"
+							},
+							{
+								"key": "X-EXTERNAL-ID",
+								"value": "78910",
+								"type": "text"
+							},
+							{
+								"key": "CHANNEL-ID",
+								"value": "95221",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/informasi-saldo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"informasi-saldo"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 08:13:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+				},
+				{
+					"name": "200 Informasi Saldo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2025-03-27",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "MayBank2025",
+								"type": "text"
+							},
+							{
+								"key": "ORIGIN",
+								"value": "www.maybank.com",
+								"type": "text"
+							},
+							{
+								"key": "X-PARTNER-ID",
+								"value": "123456",
+								"type": "text"
+							},
+							{
+								"key": "X-EXTERNAL-ID",
+								"value": "78910",
+								"type": "text"
+							},
+							{
+								"key": "CHANNEL-ID",
+								"value": "95221",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api-maybank-v1/informasi-saldo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api-maybank-v1",
+								"informasi-saldo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 08:14:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data rahasia mr. daud\",\n    \"data\": {\n        \"nama\": \"Mr. Daud\",\n        \"umur\": 25\n    }\n}"
+				}
+			]
+		}
+	]
+}
