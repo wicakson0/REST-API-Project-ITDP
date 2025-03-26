@@ -45,7 +45,7 @@ class ProductController extends Controller
         //     'data' => $products
         // ];
 
-        return response()->json($products, Response::HTTP_OK);
+        return Response()->json($products, Response::HTTP_OK);
     }
 
     /** @OA\Get(
