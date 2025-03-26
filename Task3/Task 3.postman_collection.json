@@ -1,0 +1,1833 @@
+{
+	"info": {
+		"_postman_id": "9b20b7ed-dce8-4beb-962c-b543c162a596",
+		"name": "Task 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42802482"
+	},
+	"item": [
+		{
+			"name": "Balance-Inquiry",
+			"item": [
+				{
+					"name": "Sevice-Signature",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00"
+							},
+							{
+								"key": "X-CLIENT-SECRET",
+								"value": "mnPTGGeRzeLiAiIfbB1HFEPZRrFGZQqffRnxCkXbLtc"
+							},
+							{
+								"key": "HttpMethod",
+								"value": "POST"
+							},
+							{
+								"key": "EndpoinUrl",
+								"value": "/api/v1.0/balance-inquiry"
+							},
+							{
+								"key": "AccessToken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-service",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"utilities",
+								"signature-service"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "(200) service signature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-CLIENT-SECRET",
+										"value": "mnPTGGeRzeLiAiIfbB1HFEPZRrFGZQqffRnxCkXbLtc="
+									},
+									{
+										"key": "HttpMethod",
+										"value": "POST"
+									},
+									{
+										"key": "EndpoinUrl",
+										"value": "/api/v1.0/balance-inquiry"
+									},
+									{
+										"key": "AccessToken",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-service",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"utilities",
+										"signature-service"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 12:20:12 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"signature\": \"W+D/EIJkHJ4ZHB9nuklq/zSEeYF+GT6/Eo0PlsTvCltP8wnv5ULqmum2v+ga5u2CJVAUWZwhVMkWFXDh2jkbFw==\"\n}"
+						},
+						{
+							"name": "(400) Timestamp Required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00",
+										"disabled": true
+									},
+									{
+										"key": "X-CLIENT-SECRET",
+										"value": "mnPTGGeRzeLiAiIfbB1HFEPZRrFGZQqffRnxCkXbLtc="
+									},
+									{
+										"key": "HttpMethod",
+										"value": "POST"
+									},
+									{
+										"key": "EndpoinUrl",
+										"value": "/api/v1.0/balance-inquiry"
+									},
+									{
+										"key": "AccessToken",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-service",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"utilities",
+										"signature-service"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:32:37 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The timestamp field is required.\"\n}"
+						},
+						{
+							"name": "(400) Invalid Client Secret",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-CLIENT-SECRET",
+										"value": "mnPTGGeRzeLiAiIfbB1HFEPZRrFGZQqffRnxCkXbLtc"
+									},
+									{
+										"key": "HttpMethod",
+										"value": "POST"
+									},
+									{
+										"key": "EndpoinUrl",
+										"value": "/api/v1.0/balance-inquiry"
+									},
+									{
+										"key": "AccessToken",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-service",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"utilities",
+										"signature-service"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:33:39 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4010000\",\n    \"responseMessage\": \"Invalid Client Secret\"\n}"
+						},
+						{
+							"name": "(400) Http Required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-CLIENT-SECRET",
+										"value": "mnPTGGeRzeLiAiIfbB1HFEPZRrFGZQqffRnxCkXbLtc="
+									},
+									{
+										"key": "HttpMethod",
+										"value": "POST",
+										"disabled": true
+									},
+									{
+										"key": "EndpoinUrl",
+										"value": "/api/v1.0/balance-inquiry"
+									},
+									{
+										"key": "AccessToken",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-service",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"utilities",
+										"signature-service"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:34:04 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The httpMethod field is required.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Balance-Inqury",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YTNiMDY3ZS0xZmMyLTRkZGItOWIyYS01ZGJkMmUyZDExNmQiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTk5Nzg0LCJleHAiOjE3NDMwMDA2ODQsImlhdCI6MTc0Mjk5OTc4NH0.-g5n_lN_lsmEKxgiON-YIz0nSwy9m9a02ZmRdYiVXJY"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "VwjAtbwdptcy6K7zpKtxjdfQZVlBpFrwahH1M1yHOWmVt11e/0Zqp92PtCkdDlAWxbnXYPnWKZt1iP9F4p7YuA=="
+							},
+							{
+								"key": "X-PARTNER-ID",
+								"value": "43ff5632396a4527be19aabc594b20ea"
+							},
+							{
+								"key": "X-EXTERNAL-ID",
+								"value": "41807553358950093184162180797837"
+							},
+							{
+								"key": "CHANNEL-ID",
+								"value": "95221"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/balance-inquiry",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"balance-inquiry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "(200) Bank Statement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZTI5MmYwOC0zYjQ2LTQxZTQtYjI0Ny02MjY3OTJmN2NlZmQiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTY0NzMzLCJleHAiOjE3NDI5NjU2MzMsImlhdCI6MTc0Mjk2NDczM30.KY5HNc9PQCwktJBWXUvBZ3FQeSTzxSuGbzB_dfahPEo"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-SIGNATURE",
+										"value": "NvXoz/F7W5n2f/K3IIgD9SdRei2AbB1FUrir72nr7ZhBV8O8TOyiZlb4EHVSmHvbqbvwZlTjF68+NrZcMStuzA=="
+									},
+									{
+										"key": "X-PARTNER-ID",
+										"value": "43ff5632396a4527be19aabc594b20ea"
+									},
+									{
+										"key": "X-EXTERNAL-ID",
+										"value": "41807553358950093184162180797837"
+									},
+									{
+										"key": "CHANNEL-ID",
+										"value": "95221"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"partnerReferenceNo\":\"2020102900000000000001\", \"bankCardToken\":\"6d7963617264746f6b656e\", \"accountNo\":\"2000200202\", \"fromDateTime\":\"2019-07-03T12:08:56+07:00\", \"toDateTime\":\"2019-07-03T12:08:56+07:00\", \"additionalInfo\":{ \"deviceId\":\"12345679237\", \"channel\":\"mobilephone\" }}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/bank-statement",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"bank-statement"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-TIMESTAMP",
+									"value": "2025-03-26T11:52:43+07:00"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 04:52:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1188"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"2001400\",\n    \"responseMessage\": \"Successful\",\n    \"referenceNo\": \"b9f69b4b99d14c48a8f4459f27694d5a\",\n    \"partnerReferenceNo\": \"2020102900000000000001\",\n    \"balance\": [\n        {\n            \"amount\": {\n                \"value\": \"10000.00\",\n                \"currency\": \"IDR\",\n                \"dateTime\": \"2025-03-26T11:52:43+07:00\"\n            },\n            \"startingBalance\": {\n                \"value\": \"10000.00\",\n                \"currency\": \"IDR\",\n                \"dateTime\": \"2025-03-26T11:52:43+07:00\"\n            },\n            \"endingBalance\": {\n                \"value\": \"10000.00\",\n                \"currency\": \"IDR\",\n                \"dateTime\": \"2025-03-26T11:52:43+07:00\"\n            }\n        }\n    ],\n    \"totalCreditEntries\": {\n        \"numberOfEntries\": 10,\n        \"amount\": {\n            \"value\": \"10000.00\",\n            \"currency\": \"IDR\"\n        }\n    },\n    \"totalDebitEntries\": {\n        \"numberOfEntries\": 10,\n        \"amount\": {\n            \"value\": \"10000.00\",\n            \"currency\": \"IDR\"\n        }\n    },\n    \"hasMore\": \"N\",\n    \"lastRecordDateTime\": \"2025-03-26T11:52:43+07:00\",\n    \"detailData\": [\n        {\n            \"detailBalance\": {\n                \"startAmount\": [\n                    {\n                        \"amount\": {\n                            \"value\": \"10000.00\",\n                            \"currency\": \"IDR\"\n                        }\n                    }\n                ],\n                \"endAmount\": [\n                    {\n                        \"amount\": {\n                            \"value\": \"10000.00\",\n                            \"currency\": \"IDR\"\n                        }\n                    }\n                ]\n            },\n            \"amount\": {\n                \"value\": \"10000.00\",\n                \"currency\": \"IDR\"\n            },\n            \"originAmount\": {\n                \"value\": \"10000.00\",\n                \"currency\": \"IDR\"\n            },\n            \"transactionDate\": \"2025-02-26T11:52:43+07:00\",\n            \"remark\": \"Payment to Warung Ikan Bakar\",\n            \"transactionId\": \"9546321112635558\",\n            \"type\": \"CREDIT\",\n            \"transactionDetailStatus\": \"SUCCESS\"\n        }\n    ],\n    \"additionalInfo\": {\n        \"deviceId\": \"12345679237\",\n        \"channel\": \"mobilephone\"\n    }\n}"
+						},
+						{
+							"name": "(400) Unauthorized Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-SIGNATURE",
+										"value": "W+D/EIJkHJ4ZHB9nuklq/zSEeYF+GT6/Eo0PlsTvCltP8wnv5ULqmum2v+ga5u2CJVAUWZwhVMkWFXDh2jkbFw=="
+									},
+									{
+										"key": "X-PARTNER-ID",
+										"value": "43ff5632396a4527be19aabc594b20ea"
+									},
+									{
+										"key": "X-EXTERNAL-ID",
+										"value": "41807553358950093184162180797837"
+									},
+									{
+										"key": "CHANNEL-ID",
+										"value": "95221"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/balance-inquiry",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"balance-inquiry"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:35:11 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4011101\",\n    \"responseMessage\": \"Unauthorized. The signature is invalid - invalid_token\"\n}"
+						},
+						{
+							"name": "(401) Token Expire",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTE3MDg0ZS00YThiLTQ1MTktOTI0ZC02N2Y3NzkxNDFiNmIiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTkxNTc0LCJleHAiOjE3NDI5OTI0NzQsImlhdCI6MTc0Mjk5MTU3NH0.yaZNrmAkvb7MgU3sPwjCXVrxhwhDJp5f9UDp0y5vNz4"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-SIGNATURE",
+										"value": "W+D/EIJkHJ4ZHB9nuklq/zSEeYF+GT6/Eo0PlsTvCltP8wnv5ULqmum2v+ga5u2CJVAUWZwhVMkWFXDh2jkbFw="
+									},
+									{
+										"key": "X-PARTNER-ID",
+										"value": "43ff5632396a4527be19aabc594b20ea"
+									},
+									{
+										"key": "X-EXTERNAL-ID",
+										"value": "41807553358950093184162180797837"
+									},
+									{
+										"key": "CHANNEL-ID",
+										"value": "95221"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/balance-inquiry",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"balance-inquiry"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:35:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4011101\",\n    \"responseMessage\": \"Unauthorized. The token expired at '03/26/2025 12:34:34' - invalid_token\"\n}"
+						},
+						{
+							"name": "(404) Unauthorized Signature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YTNiMDY3ZS0xZmMyLTRkZGItOWIyYS01ZGJkMmUyZDExNmQiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTk5Nzg0LCJleHAiOjE3NDMwMDA2ODQsImlhdCI6MTc0Mjk5OTc4NH0.-g5n_lN_lsmEKxgiON-YIz0nSwy9m9a02ZmRdYiVXJY"
+									},
+									{
+										"key": "X-TIMESTAMP",
+										"value": "2020-01-01T00:00:00+07:00"
+									},
+									{
+										"key": "X-SIGNATURE",
+										"value": "VwjAtbwdptcy6K7zpKtxjdfQZVlBpFrwahH1M1yHOWmVt11e/0Zqp92PtCkdDlAWxbnXYPnWKZt1iP9F4p7YuA="
+									},
+									{
+										"key": "X-PARTNER-ID",
+										"value": "43ff5632396a4527be19aabc594b20ea"
+									},
+									{
+										"key": "X-EXTERNAL-ID",
+										"value": "41807553358950093184162180797837"
+									},
+									{
+										"key": "CHANNEL-ID",
+										"value": "95221"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"partnerReferenceNo\":\"2020102900000000000001\",\r\n   \"bankCardToken\":\"6d7963617264746f6b656e\",\r\n   \"accountNo\":\"2000100101\",\r\n   \"balanceTypes\":[\r\n      \"Cash\",\r\n      \"Coins\"\r\n   ],\r\n   \"additionalInfo\":{\r\n      \"deviceId\":\"12345679237\",\r\n      \"channel\":\"mobilephone\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/balance-inquiry",
+									"protocol": "https",
+									"host": [
+										"apidevportal",
+										"aspi-indonesia",
+										"or",
+										"id"
+									],
+									"port": "44310",
+									"path": [
+										"api",
+										"v1.0",
+										"balance-inquiry"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=2592000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Mar 2025 14:37:09 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"4011100\",\n    \"responseMessage\": \"Unauthorized. Invalid Signature\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Signature-Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-TIMESTAMP",
+						"value": "2020-01-01T00:00:00+07:00",
+						"type": "text"
+					},
+					{
+						"key": "X-CLIENT-KEY",
+						"value": "43ff5632396a4527be19aabc594b20ea",
+						"type": "text"
+					},
+					{
+						"key": "Private_Key",
+						"value": "LH8gmvzQW6vs/NVMWD8CKM+EXHyuokAEm81A2Vk8Sbk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-auth",
+					"protocol": "https",
+					"host": [
+						"apidevportal",
+						"aspi-indonesia",
+						"or",
+						"id"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"v1.0",
+						"utilities",
+						"signature-auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "(200) Signature Auth",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "Private_Key",
+								"value": "LH8gmvzQW6vs/NVMWD8CKM+EXHyuokAEm81A2Vk8Sbk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-auth",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"utilities",
+								"signature-auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 03:52:11 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "360"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"signature\": \"j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==\"\n}"
+				},
+				{
+					"name": "(400) Client Field Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Private_Key",
+								"value": "LH8gmvzQW6vs/NVMWD8CKM+EXHyuokAEm81A2Vk8Sbk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-auth",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"utilities",
+								"signature-auth"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:24:58 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "78"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The clientId field is required.\"\n}"
+				},
+				{
+					"name": "(400) Private Key Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "Private_Key",
+								"value": "LH8gmvzQW6vs/NVMWD8CKM+EXHyuokAEm81A2Vk8Sbk=",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-auth",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"utilities",
+								"signature-auth"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:25:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "80"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The privateKey field is required.\"\n}"
+				},
+				{
+					"name": "(400) Timestamp Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "Private_Key",
+								"value": "LH8gmvzQW6vs/NVMWD8CKM+EXHyuokAEm81A2Vk8Sbk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/utilities/signature-auth",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"utilities",
+								"signature-auth"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:25:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The timestamp field is required.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "B2B Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-TIMESTAMP",
+						"value": "2020-01-01T00:00:00+07:00",
+						"type": "text"
+					},
+					{
+						"key": "X-CLIENT-KEY",
+						"value": "43ff5632396a4527be19aabc594b20ea",
+						"type": "text"
+					},
+					{
+						"key": "X-SIGNATURE",
+						"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+					"protocol": "https",
+					"host": [
+						"apidevportal",
+						"aspi-indonesia",
+						"or",
+						"id"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"v1.0",
+						"access-token",
+						"b2b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "(200) Access Token B2B",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"access-token",
+								"b2b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-TIMESTAMP",
+							"value": "2025-03-26T11:02:10+07:00"
+						},
+						{
+							"key": "X-CLIENT-KEY",
+							"value": "43ff5632396a4527be19aabc594b20ea"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 04:02:10 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"2007300\",\n    \"responseMessage\": \"Successful\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxNzcxMjZiZC0yYmZhLTQ2OTQtYTUzYS03M2YwYjUxZGZlOTkiLCJjbGllbnRJZCI6IjQzZmY1NjMyMzk2YTQ1MjdiZTE5YWFiYzU5NGIyMGVhIiwibmJmIjoxNzQyOTYxNzMwLCJleHAiOjE3NDI5NjI2MzAsImlhdCI6MTc0Mjk2MTczMH0.MC2EPjy1Hd8xXIyyiyxmmG5iQlC0T8AzxXA2h5Y081w\",\n    \"tokenType\": \"Bearer\",\n    \"expiresIn\": \"900\",\n    \"additionalInfo\": {}\n}"
+				},
+				{
+					"name": "(400) Client Key Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"access-token",
+								"b2b"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:27:15 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The clientKey field is required.\"\n}"
+				},
+				{
+					"name": "(400) Invalid Client ID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20e",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"access-token",
+								"b2b"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:28:34 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4010000\",\n    \"responseMessage\": \"Invalid Client Id\"\n}"
+				},
+				{
+					"name": "(400) Timestamp Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"access-token",
+								"b2b"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:29:03 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The timestamp field is required.\"\n}"
+				},
+				{
+					"name": "(400) Signature Required",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-TIMESTAMP",
+								"value": "2020-01-01T00:00:00+07:00",
+								"type": "text"
+							},
+							{
+								"key": "X-CLIENT-KEY",
+								"value": "43ff5632396a4527be19aabc594b20ea",
+								"type": "text"
+							},
+							{
+								"key": "X-SIGNATURE",
+								"value": "j/2aDw/VaoNnA7ZjDFAbvDQ9poKwos3pmT+Ol78S4UuCyd3rQ3x+OIO/fkDNTbCuJnx8tjlLwp6py93ZavrypKBnzBIEImrEUyFJ1Zb1hr6DVgKmM6VxlgdIPhFl/g9rBY3ebUMZBAzWW3XKmGr0ghyBkLjLWOOOV4QV03Tls7UTyCOGOosJzkvZj+f2j8qd3dOyFma2cj3AMt9H+jxnIrgUkOmyS08RMIfRAhk/JIP/qGZc8kdhwEMtMwc1jn6h1xfTU2bumSkWkKly7z/LbWo5/Cxzb4RnBnS5vXnOXyy8i+DGa0oPAPdgJbdDVAXBf7XFAPMoNEjgbBOU54XnTA==",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"grantType\":\"client_credentials\",\r\n   \"additionalInfo\":{\r\n  \r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apidevportal.aspi-indonesia.or.id:44310/api/v1.0/access-token/b2b",
+							"protocol": "https",
+							"host": [
+								"apidevportal",
+								"aspi-indonesia",
+								"or",
+								"id"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"v1.0",
+								"access-token",
+								"b2b"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=2592000"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Mar 2025 14:30:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"4000000\",\n    \"responseMessage\": \"The signature field is required.\"\n}"
+				}
+			]
+		}
+	]
+}
