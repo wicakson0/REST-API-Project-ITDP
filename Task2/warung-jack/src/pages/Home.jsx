@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
@@ -23,6 +21,14 @@ function Home() {
       })
       .catch((error) => console.error("Error fetching data:", error));
     console.log(products);
+  }
+
+  function handleDelete() {
+    if (products.length === 1 && currentPage > 1) {
+      setCurrentPage((prevPage) => prevPage - 1);
+    } else {
+      loadData();
+    }
   }
 
   useEffect(() => {
@@ -54,6 +60,7 @@ function Home() {
             name={product.name}
             price={product.price}
             refreshProducts={loadData}
+            handleDelete={handleDelete}
           />
         ))}
       </div>
