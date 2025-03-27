@@ -502,16 +502,75 @@
 			"response": []
 		},
 		{
-			"name": "Informasi Saldo",
+			"name": "informasi saldo",
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|HppVbAGvII9WpQVdsO3iGVAM6MnPCD5zCHjo6hyu92cdb698",
+						"type": "text"
+					},
+					{
+						"key": "X-TIMESTAMP",
+						"value": "2025-03-27",
+						"type": "text"
+					},
+					{
+						"key": "X-SIGNATURE",
+						"value": "MayBank2025",
+						"type": "text"
+					},
+					{
+						"key": "ORIGIN",
+						"value": "www.maybank.com",
+						"type": "text"
+					},
+					{
+						"key": "X-PARTNER-ID",
+						"value": "123456",
+						"type": "text"
+					},
+					{
+						"key": "X-EXTERNAL-ID",
+						"value": "78910",
+						"type": "text"
+					},
+					{
+						"key": "CHANNEL-ID",
+						"value": "95221",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api-maybank-v1/informasi-saldo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api-maybank-v1",
+						"informasi-saldo"
+					]
+				}
 			},
 			"response": [
 				{
-					"name": "599 Informasi Saldo",
+					"name": "200",
 					"originalRequest": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
@@ -520,14 +579,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"value": "Bearer 8|HppVbAGvII9WpQVdsO3iGVAM6MnPCD5zCHjo6hyu92cdb698",
 								"type": "text"
 							},
 							{
 								"key": "X-TIMESTAMP",
 								"value": "2025-03-27",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							},
 							{
 								"key": "X-SIGNATURE",
@@ -571,8 +629,8 @@
 							]
 						}
 					},
-					"status": "unknown status",
-					"code": 599,
+					"status": "OK",
+					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -593,7 +651,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 26 Mar 2025 08:12:48 GMT"
+							"value": "Thu, 27 Mar 2025 07:18:27 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -605,16 +663,16 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "58"
+							"value": "59"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 599,\n    \"message\": \"You cannot access this information\"\n}"
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Informasi saldo berhasil ditemukan\",\n    \"data\": {\n        \"saldo\": 1000000,\n        \"rekening\": \"1234567890\"\n    }\n}"
 				},
 				{
-					"name": "401 Informasi Saldo",
+					"name": "401",
 					"originalRequest": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
@@ -623,7 +681,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"value": "Bearer 8|HppVbAGvII9WpQVdsO3iGVAM6MnPCD5zCHjo6hyu92cdb698",
 								"type": "text",
 								"disabled": true
 							},
@@ -696,7 +754,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 26 Mar 2025 08:13:42 GMT"
+							"value": "Thu, 27 Mar 2025 07:19:25 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -707,9 +765,9 @@
 					"body": "{\n    \"message\": \"Unauthenticated.\"\n}"
 				},
 				{
-					"name": "200 Informasi Saldo",
+					"name": "599",
 					"originalRequest": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
@@ -718,13 +776,14 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer 4|7gsssB7HUTb63ZZoX34d2tu3vV7dasaBKqPIsmMbde3802be",
+								"value": "Bearer 8|HppVbAGvII9WpQVdsO3iGVAM6MnPCD5zCHjo6hyu92cdb698",
 								"type": "text"
 							},
 							{
 								"key": "X-TIMESTAMP",
 								"value": "2025-03-27",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							},
 							{
 								"key": "X-SIGNATURE",
@@ -768,8 +827,8 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "unknown status",
+					"code": 599,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -790,7 +849,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 26 Mar 2025 08:14:04 GMT"
+							"value": "Thu, 27 Mar 2025 07:19:43 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -806,7 +865,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 200,\n    \"message\": \"Data rahasia mr. daud\",\n    \"data\": {\n        \"nama\": \"Mr. Daud\",\n        \"umur\": 25\n    }\n}"
+					"body": "{\n    \"status\": 599,\n    \"message\": \"You cannot access this information\"\n}"
 				}
 			]
 		}
