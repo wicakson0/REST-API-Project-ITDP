@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Layout from "./Layout/Layout";
 import InsertProduct from "./pages/InsertProduct";
 import UpdateProduct from "./pages/UpdateProduct";
+import Informasi from "./pages/Informasi";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "products/:id", element: <ProductDetail /> },
       { path: "products/insert", element: <InsertProduct /> },
       { path: "products/update/:id", element: <UpdateProduct /> },
+      { path: "informasi", element: <Informasi /> },
       { path: "*", element: <NotFound /> },
     ],
   },

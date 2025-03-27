@@ -13,7 +13,14 @@ function Header() {
         >
           Warung Bang Jack & Bang Daniels
         </button>
+
+        <div className="justify-content-end">
+        <ul className="menu menu-horizontal px-1">
+          <li><a href="/informasi">Informasi</a></li>
+        </ul>
       </div>
+      </div>
+      
     </>
   );
 }
