@@ -13,9 +13,9 @@ const Informasi = () => {
         {
           headers: {
             accept: "application/json",
-            "X-TIMESTAMP": "2020-01-01T00:00:00+07:00",
-            "X-CLIENT-KEY": "5d8e726baee5466db2ee5433356a423c",
-            Private_Key: "wkeCulf8W9/pV2p8G69UUkyr9+IY5z6jPIZDBGsPZGc=",
+            "X-TIMESTAMP": import.meta.env.VITE_TIMESTAMP,
+            "X-CLIENT-KEY": import.meta.env.VITE_CLIENT_ID,
+            Private_Key: import.meta.env.VITE_PRIVATE_KEY,
           },
         }
       );
@@ -31,8 +31,8 @@ const Informasi = () => {
           headers: {
             accept: "application/json",
             "Content-Type": "application/json",
-            "X-TIMESTAMP": "2020-01-01T00:00:00+07:00",
-            "X-CLIENT-KEY": "5d8e726baee5466db2ee5433356a423c",
+            "X-TIMESTAMP": import.meta.env.VITE_TIMESTAMP,
+            "X-CLIENT-KEY": import.meta.env.VITE_CLIENT_ID,
             "X-SIGNATURE": xSignatureAuth,
           },
         }
@@ -57,8 +57,8 @@ const Informasi = () => {
         {
           headers: {
             accept: "application/json",
-            "X-TIMESTAMP": "2020-01-01T00:00:00+07:00",
-            "X-CLIENT-SECRET": "G9+wvUZga2WPCTNyzGMzGBrg69dMFsBvWpgrIYZMqhM=",
+            "X-TIMESTAMP": import.meta.env.VITE_TIMESTAMP,
+            "X-CLIENT-SECRET": import.meta.env.VITE_CLIENT_SECRET,
             HttpMethod: "POST",
             EndpoinUrl: "/api/v1.0/balance-inquiry",
             AccessToken: accessToken,
@@ -88,9 +88,9 @@ const Informasi = () => {
             accept: "application/json",
             "Content-Type": "application/json",
             Authorization: `Bearer ${accessToken}`,
-            "X-TIMESTAMP": "2020-01-01T00:00:00+07:00",
+            "X-TIMESTAMP": import.meta.env.VITE_TIMESTAMP,
             "X-SIGNATURE": xSignatureBalance,
-            "X-PARTNER-ID": "5d8e726baee5466db2ee5433356a423c",
+            "X-PARTNER-ID": import.meta.env.VITE_CLIENT_ID,
             "X-EXTERNAL-ID": "41807553358950093184162180797837",
             "CHANNEL-ID": "95221",
           },
@@ -106,7 +106,6 @@ const Informasi = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      {/* Balance Information */}
       <div style={{ textAlign: "center" }}>
         <h1>Informasi Saldo</h1>
         <p>
@@ -153,16 +152,31 @@ const Informasi = () => {
               <strong>Reg Status Code:</strong> 0001
             </p>
             <table
-              border="1"
-              width="100%"
-              style={{ borderCollapse: "collapse", marginTop: "10px" }}
+              style={{
+                borderCollapse: "collapse",
+                width: "100%",
+                marginTop: "10px",
+              }}
             >
               <thead>
-                <tr style={{ backgroundColor: "#f2f2f2" }}>
-                  <th>#</th>
-                  <th>Account Infos</th>
-                  <th>Value</th>
-                  <th>Currency</th>
+                <tr
+                  style={{
+                    backgroundColor: "#f2f2f2",
+                    border: "1px solid #ccc",
+                  }}
+                >
+                  <th style={{ border: "1px solid #ccc", padding: "8px" }}>
+                    #
+                  </th>
+                  <th style={{ border: "1px solid #ccc", padding: "8px" }}>
+                    Account Infos
+                  </th>
+                  <th style={{ border: "1px solid #ccc", padding: "8px" }}>
+                    Value
+                  </th>
+                  <th style={{ border: "1px solid #ccc", padding: "8px" }}>
+                    Currency
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -181,10 +195,18 @@ const Informasi = () => {
                   },
                 ].map((item, idx) => (
                   <tr key={idx}>
-                    <td>{idx + 1}</td>
-                    <td>{item.label}</td>
-                    <td>{item.value?.value || "N/A"}</td>
-                    <td>{item.value?.currency || "N/A"}</td>
+                    <td style={{ border: "1px solid #ccc", padding: "8px" }}>
+                      {idx + 1}
+                    </td>
+                    <td style={{ border: "1px solid #ccc", padding: "8px" }}>
+                      {item.label}
+                    </td>
+                    <td style={{ border: "1px solid #ccc", padding: "8px" }}>
+                      {item.value?.value || "N/A"}
+                    </td>
+                    <td style={{ border: "1px solid #ccc", padding: "8px" }}>
+                      {item.value?.currency || "N/A"}
+                    </td>
                   </tr>
                 ))}
               </tbody>
