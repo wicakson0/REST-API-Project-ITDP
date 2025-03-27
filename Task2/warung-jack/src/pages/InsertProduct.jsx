@@ -19,20 +19,27 @@ function InsertProduct() {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
+  // const handleImageChange = (e) => {
+  //   const file = e.target.files[0];
+  //   if (file && ["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+  //     setFormData({ ...formData, image: file });
+  //     setPreview(URL.createObjectURL(file));
+  //     setErrors({ ...errors, image: "" });
+  //   } else {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Invalid Image",
+  //       text: "Only JPG, PNG, or WEBP images are allowed!",
+  //     });
+  //     e.target.value = null; // Reset file input
+  //   }
+  // };
+
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    if (file && ["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
-      setFormData({ ...formData, image: file });
-      setPreview(URL.createObjectURL(file));
-      setErrors({ ...errors, image: "" });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Invalid Image",
-        text: "Only JPG, PNG, or WEBP images are allowed!",
-      });
-      e.target.value = null; // Reset file input
-    }
+    setFormData({ ...formData, image: file });
+    setPreview(URL.createObjectURL(file));
+    setErrors({ ...errors, image: "" });
   };
 
   const handleSubmit = async (e) => {
