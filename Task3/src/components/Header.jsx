@@ -8,7 +8,7 @@ function Header() {
     <Navbar expand="lg" bg="primary" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <strong>Manufest Apps</strong>
+          <strong>Warung Bang Jack & Daniels</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

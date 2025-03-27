@@ -15,6 +15,7 @@
     "axios": "^1.8.4",
     "bootstrap": "^5.3.3",
     "bulma": "^1.0.3",
+    "dotenv": "^16.4.7",
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
     "react-bootstrap": "^2.10.9",
