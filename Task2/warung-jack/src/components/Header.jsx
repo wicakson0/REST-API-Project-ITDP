@@ -1,27 +1,31 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
-  const navigate = useNavigate();
-
   return (
-    <>
-      <div className="navbar bg-base-300">
-        <button
-          className="btn btn-ghost text-xl text-center"
-          onClick={() => navigate("/")}
-        >
-          Warung Bang Jack & Bang Daniels
-        </button>
+    <div className="navbar bg-base-300">
+      <NavLink
+        to="/"
+        className="btn btn-ghost text-4xl text-center p-2 font-serif italic"
+      >
+        Warung Bang Jack
+      </NavLink>
 
-        <div className="justify-content-end">
+      <div className="ml-auto">
         <ul className="menu menu-horizontal px-1">
-          <li><a href="/informasi">Informasi</a></li>
+          <li>
+            <NavLink
+              to="/informasi"
+              className={({ isActive }) =>
+                isActive ? "btn btn-active" : "btn btn-ghost"
+              }
+            >
+              <button className="btn btn-active btn-info">Informasi</button>
+            </NavLink>
+          </li>
         </ul>
       </div>
-      </div>
-      
-    </>
+    </div>
   );
 }
 
